@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --background-color: hsl(212, 45%, 89%);
+  --primary-color-white: hsl(0, 0%, 100%);
+  --secondary-color-Dark-blue: hsl(218, 44%, 22%);
+  --secondary-color-Grayish-blue: hsl(220, 15%, 55%);
+
+  --ff-main: "Outfit", sans-serif;
+  --fw-bold: 700;
+  --fw-normal: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--secondary-color-Grayish-blue);
+
+  font-family: var(--ff-main);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+main {
+  background-color: var(--primary-color-white);
+
+  font-size: 0.95rem;
+
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+  width: 21.3em;
+  height: 33em;
+  padding: 1rem;
+}
+
+.card_qr-code {
+  width: 100%;
+  border-radius: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.card_heading {
+  color: var(--secondary-color-Dark-blue);
+
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold);
+
+  margin: 1rem;
+}
+
+.card_description {
+  color: var(--secondary-color-Grayish-blue);
+
+  text-align: center;
+  font-weight: var(--fw-normal);
+
+  margin: 0 1.3rem 1.5rem 1.3rem;
+}
