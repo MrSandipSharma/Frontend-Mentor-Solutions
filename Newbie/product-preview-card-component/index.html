@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="product">
+        <section class="product_image">
+          <picture>
+            <source
+              media="(min-width: 597px)"
+              srcset="
+                /product-preview-card-component/images/image-product-desktop.jpg
+              "
+            />
+            <source
+              media="(min-width: 0px)"
+              srcset="
+                /product-preview-card-component/images/image-product-mobile.jpg
+              "
+            />
+            <img
+              src="/product-preview-card-component/images/image-product-mobile.jpg"
+              alt="Product_image"
+            />
+          </picture>
+        </section>
+
+        <section class="product_detail">
+          <p class="product_category">Perfume</p>
+          <h1 class="product_tittle">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product_description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex-box">
+            <p class="current_price">
+              <span class="sr-only">Current Price</span> $149.99
+            </p>
+            <p class="original_price">
+              <span class="sr-only">Original Price</span> $169.99
+            </p>
+          </div>
+          <buttun class="btn" data-icon="shopping-cart">Add to Cart</buttun>
+        </section>
+      </article>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
