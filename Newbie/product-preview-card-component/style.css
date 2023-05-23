@@ -127,6 +127,7 @@ body {
   gap: 0.5rem;
 
   text-align: center;
+  border: none;
   border-radius: 0.5rem;
 
   cursor: pointer;
