@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="sr_only">Profile Card of Victor Crest</h1>
+      <article class="profile_card">
+        <div class="profile_card_banner">
+          <img
+            src="/profile-card-component-main/images/bg-pattern-card.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="profile_identification">
+          <div class="profile_card_user_image">
+            <img
+              src="/profile-card-component-main/images/image-victor.jpg"
+              alt="Profile Picture of Victor Crest"
+            />
+          </div>
+
+          <div class="flex-group">
+            <h2 class="profile_username">Victor Crest</h2>
+            <p class="profile_user_age"><span class="sr_only">Age</span> 26</p>
+          </div>
+          <p class="profile_card_location">London</p>
+        </div>
+
+        <section>
+          <div class="profile-card-statistics">
+            <h2 class="sr_only">profile statistics</h2>
+            <ul class="profile-stats">
+              <li class="profile-stat" id="followers">
+                <p class="profile-stat-number">80K</p>
+                <p class="profile-stat-label">Followers</p>
+              </li>
+              <li class="profile-stat" id="likes">
+                <p class="profile-stat-number">803K</p>
+                <p class="profile-stat-label">Likes</p>
+              </li>
+              <li class="profile-stat" id="fhotos">
+                <p class="profile-stat-number">1.4K</p>
+                <p class="profile-stat-label">Photos</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

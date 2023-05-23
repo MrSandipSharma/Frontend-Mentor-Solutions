@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color-cyan: hsl(185, 75%, 39%);
+  --primary-color-desaturated-blue: hsl(229, 23%, 23%);
+  --primary-color-grayish-blue: hsl(227, 10%, 46%);
+
+  --secondary-color-white: hsl(0, 0%, 100%);
+
+  --Neutral-color-gray: hsl(0, 0%, 59%);
+
+  --ff-base: "Kumbh Sans", sans-serif;
+  --fw-bold: 700;
+  --fw-normal: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: var(--primary-color-desaturated-blue);
+  background-color: var(--primary-color-cyan);
+
+  background-image: url(/profile-card-component-main/images/bg-pattern-top.svg),
+    url(/profile-card-component-main/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 45vw bottom 43vh, left 27vw top 48vh;
+
+  font-family: var(--ff-base);
+  font-weight: var(--fw-normal);
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.sr_only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.8rem;
+
+  margin-top: 3.5rem;
+}
+
+.profile_card {
+  background-color: var(--secondary-color-white);
+
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+
+.profile_identification {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  gap: 0.2rem;
+}
+
+.profile_card_user_image img {
+  position: absolute;
+  width: auto;
+
+  top: -60px;
+  right: 33%;
+
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color-white);
+}
+
+.profile_username {
+  word-spacing: -0.1rem;
+}
+
+.profile_user_age {
+  font-size: 1.1rem;
+  color: var(--primary-color-grayish-blue);
+}
+
+.profile_card_location {
+  font-size: 0.9rem;
+  color: var(--primary-color-grayish-blue);
+}
+
+.profile-stats {
+  font-size: 1.2rem;
+  list-style: none;
+
+  display: flex;
+  text-align: center;
+
+  padding: 1.4rem;
+  margin-top: 1rem;
+
+  border-top: 0.1rem solid hsla(0, 0%, 59%, 0.2);
+}
+
+.profile-stat {
+  width: 100%;
+}
+
+.profile-stat-number {
+  font-weight: var(--fw-bold);
+
+  margin-bottom: -0.5rem;
+}
+
+.profile-stat-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+
+  color: var(--clr-secondary-grayish-blue);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  }
+
+  .profile_card_user_image img {
+    right: 35%;
+    top: -62px;
+  }
+}
