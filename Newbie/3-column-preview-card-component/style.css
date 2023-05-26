@@ -133,8 +133,6 @@ main {
   main {
     flex-direction: row;
     margin: 0;
-    max-width: 57.5rem;
-    height: 31.25rem;
   }
 
   .column_container {
