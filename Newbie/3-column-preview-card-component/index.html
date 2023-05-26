@@ -6,26 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        position: relative;
+              * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+              }
+              body {
+                min-height: 100vh;
+                background: beige;
+                display: grid;
+                place-items: center;
+                padding: 100px 0;
+                position: relative;
+              }
+
+              main {
+          display: grid;
+          max-width: 30rem;
+          margin: 0 2rem;
+          background-color: blueviolet;
+          border-radius: .5rem;
+          grid-template-rows: repeat(3, 27em);
+          overflow: hidden;
       }
 
-      main {
-        background-color: blueviolet;
-        max-width: 57.5rem;
-        height: 31.25rem;
-        border-radius: 0.8rem;
-        padding: 15rem;
-      }
+              @media (min-width: 55em) {  /* FOR DESKTOPS */
+
+            body {
+                padding: 0;
+            }
+
+            main {
+                margin: 0;
+                max-width: 57.5rem;
+                height: 31.25rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: unset;
+            }
     </style>
   </head>
   <body>
