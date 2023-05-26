@@ -41,9 +41,11 @@ body {
   font-size: 1.1rem;
   line-height: 1.7rem;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
 
   min-height: 100vh;
   padding: 1rem;
@@ -123,9 +125,10 @@ body {
     display: flex;
     max-width: 57.5rem;
   }
-  
+
   body {
     padding: 0;
+    position: relative;
   }
 
   .column_container {
