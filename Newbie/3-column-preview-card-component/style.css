@@ -48,8 +48,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
-  padding: 1rem;
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+main {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 57.5rem;
 }
 
 .column_container {
@@ -122,14 +129,15 @@ body {
 }
 
 @media (min-width: 760px) {
-  main {
-    display: flex;
-    max-width: 57.5rem;
-    max-height: 28.409em;
-  }
-
   body {
     padding: 0;
+  }
+
+  main {
+    flex-direction: row;
+    margin: 0;
+    max-width: 57.5rem;
+    height: 31.25rem;
   }
 
   .column_container {
