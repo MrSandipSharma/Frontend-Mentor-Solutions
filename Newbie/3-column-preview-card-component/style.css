@@ -41,11 +41,6 @@ body {
   font-size: 1.1rem;
   line-height: 1.7rem;
 
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  display: grid;
-  place-items: center;
 
   min-height: 100vh;
   padding: 1rem;
