@@ -10,6 +10,9 @@
   --clr-neutral-light-gray: hsl(0, 0%, 95%);
   --clr-neutral-white: hsl(0, 0%, 100%);
 
+  color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+
   --ff-base: "Lexend Deca", sans-serif;
   --ff-special: "Big Shoulders Display", cursive;
 
@@ -40,8 +43,10 @@ body {
   font-family: var(--ff-base);
   font-size: 1.1rem;
   line-height: 1.7rem;
-display: grid;
-  place_items: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   min-height: 100vh;
   padding: 1rem;
@@ -120,11 +125,11 @@ display: grid;
   main {
     display: flex;
     max-width: 57.5rem;
+    max-height: 28.409em;
   }
 
   body {
     padding: 0;
-    position: relative;
   }
 
   .column_container {
