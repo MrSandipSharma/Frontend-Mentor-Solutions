@@ -123,6 +123,10 @@ body {
     display: flex;
     max-width: 57.5rem;
   }
+  
+  body {
+    padding: 0;
+  }
 
   .column_container {
     width: 100%;
