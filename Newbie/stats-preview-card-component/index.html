@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="sr_only">Stats Preview Card</h1>
+      <article class="stats_card">
+        <section class="stats_card_image">
+          <picture>
+            <source
+              media="(min-width: 835px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <source
+              media="(min-width: 0px)"
+              srcset="./images/image-header-mobile.jpg"
+            />
+            <img src="./images/image-header-mobile.jpg" alt="" />
+          </picture>
+        </section>
+
+        <section class="stats_card_details">
+          <h2 class="stats_card_tittle">
+            Get <span>insights</span> that help your business grow.
+          </h2>
+          <p class="stats_card_description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div>
+            <h2 class="sr_only">Statistics</h2>
+            <ul class="stats_card_statistics">
+              <li class="stats_card_stat" id="companies">
+                <p class="stats_card_number">10k+</p>
+                <p class="stats_card_label">companies</p>
+              </li>
+              <li class="stats_card_stat" id="templates">
+                <p class="stats_card_number">314</p>
+                <p class="stats_card_label">templates</p>
+              </li>
+              <li class="stats_card_stat" id="queries">
+                <p class="stats_card_number">12M+</p>
+                <p class="stats_card_label">queries</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
