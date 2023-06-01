@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --clr-primary-pale-blue: hsl(225, 100%, 94%);
+  --clr-primary-Bright-blue: hsl(245, 75%, 52%);
+  --clr-primary-Bright-blue-400: hsl(245, 50%, 60%);
+  --clr-primary-white: hsl(0, 0%, 100%);
+
+  --clr-Neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-Neutral-Desaturated-blue: hsl(224, 23%, 55%);
+  --clr-Neutral-Dark-blue: hsl(223, 47%, 23%);
+
+  --ff-base: "Red Hat Display", sans-serif;
+
+  --fw-bolder: 900;
+  --fw-bold: 700;
+  --fw-regular: 500;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--clr-Neutral-Dark-blue);
+  background: var(--clr-primary-pale-blue)
+    url(./images/pattern-background-mobile.svg);
+  background-size: 160%;
+  background-repeat: no-repeat;
+
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  padding: 3rem 1.5rem;
+
+  perspective: 10px;
+}
+
+.sr_only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.order_card {
+  transform-style: preserve-3d;
+
+  background-color: var(--clr-primary-white);
+
+  overflow: hidden;
+  border-radius: 1.3rem;
+
+  box-shadow: 0 0.875rem 1.75rem rgba(31, 47, 86, 0.25),
+    0 0.625rem 0.625rem rgba(31, 47, 86, 0.22);
+}
+
+.order_card_content {
+  display: grid;
+  gap: 0.9rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.order_card_tittle {
+  font-size: 1.4rem;
+  font-weight: var(--fw-bolder);
+}
+
+.order_card_description {
+  color: var(--clr-Neutral-Desaturated-blue);
+
+  line-height: 1.5rem;
+  font-size: 0.95rem;
+
+  padding: 0 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.order_card_plan {
+  background-color: var(--clr-Neutral-very-pale-blue);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+
+  align-items: center;
+
+  padding: 1.1rem 1rem;
+  margin-top: 0.7rem;
+
+  border-radius: 0.8rem;
+}
+
+.order_card_plan_icon {
+  max-width: 2.9em;
+  object-fit: contain;
+}
+
+.order_card_plan_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.plan_type {
+  font-size: 0.9rem;
+  font-weight: var(--fw-bolder);
+}
+
+.plan_price {
+  color: var(--clr-Neutral-Desaturated-blue);
+
+  font-size: 0.93rem;
+}
+
+.change_btn {
+  color: var(--clr-primary-Bright-blue);
+  background: none;
+
+  display: block;
+  margin-left: auto;
+
+  font-weight: var(--fw-bolder);
+
+  text-decoration-line: underline;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.6s;
+}
+
+.change_btn:hover {
+  color: var(--clr-primary-Bright-blue-400);
+
+  text-decoration: none;
+}
+
+.proceed_btn {
+  background-color: var(--clr-primary-Bright-blue);
+  color: var(--clr-primary-white);
+
+  font-size: 0.95rem;
+  font-weight: var(--fw-bold);
+
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.2rem 1.8rem rgba(108, 126, 168, 0.25),
+    0 0.625rem 0.625rem rgba(131, 148, 190, 0.22);
+
+  padding: 0.95rem;
+  margin-top: 0.5rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.proceed_btn:hover {
+  background-color: var(--clr-primary-Bright-blue-400);
+}
+
+.cancel_btn {
+  color: var(--clr-Neutral-Desaturated-blue);
+
+  font-weight: var(--fw-bolder);
+  font-size: 0.95rem;
+
+  margin-top: 0.6rem;
+  margin-bottom: 0.45rem;
+
+  cursor: pointer;
+}
+
+.cancel_btn:hover {
+  color: var(--clr-Neutral-Dark-blue);
+}
+
+@media (min-width: 650px) {
+  body {
+    background: var(--clr-primary-pale-blue)
+      url(./images/pattern-background-desktop.svg) no-repeat left top/contain;
+
+    padding: 0;
+  }
+
+  .order_card {
+    max-width: 25em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .order_card {
+    max-width: 28em;
+  }
+
+  .order_card_content {
+    gap: 0.9rem;
+
+    padding: 2.7rem 3rem;
+  }
+
+  .order_card_tittle {
+    font-size: 1.7rem;
+  }
+
+  .order_card_description {
+    line-height: 1.6rem;
+    font-size: 1rem;
+  }
+
+  .order_card_plan {
+    gap: 1.3rem;
+
+    padding: 1.5rem;
+    margin-top: 0.33rem;
+  }
+
+  .order_card_plan_detail {
+    gap: 0.3rem;
+  }
+
+  .plan_type {
+    font-size: 1rem;
+  }
+
+  .plan_price {
+    font-size: 1rem;
+  }
+
+  .change_btn {
+    font-size: 0.9rem;
+  }
+
+  .proceed_btn {
+    font-size: 0.95rem;
+
+    padding: 0.95rem;
+    margin-top: 1.23rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.6s;
+  }
+
+  .cancel_btn {
+    font-size: 0.95rem;
+
+    margin-top: 1rem;
+    margin-bottom: 0.45rem;
+
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="order_card">
+        <div class="order_card_image">
+          <img src="./images/illustration-hero.svg" alt="" />
+        </div>
+        <div class="order_card_content">
+          <h1 class="order_card_tittle">Order Summary</h1>
+          <p class="order_card_description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="order_card_plan">
+            <img
+              src="./images/icon-music.svg"
+              alt=""
+              aria-hidden="true"
+              class="order_card_plan_icon"
+            />
+            <div class="order_card_plan_detail">
+              <h2 class="plan_type">Annual Plan</h2>
+              <p class="plan_price">
+                <span class="sr_only">price</span>$59.99/year
+              </p>
+            </div>
+            <button class="change_btn">Change</button>
+          </div>
+          <a href="#" class="proceed_btn">Proceed to Payment</a>
+          <a href="#" class="cancel_btn">Cancel Order</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
