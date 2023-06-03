@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="rating_card">
+      <div class="rating_card_inner">
+        <h1 class="sr_only">Rating Card Component</h1>
+        <!-- Rating Card Front -->
+        <div class="rating_card_front">
+            <div class="rating_card_front_star_icon">
+                <img src="/images/icon-star.svg" alt="">
+              </div>
+              <h2 class="rating_card_front_tittle">How did we do?</h2>
+              <p class="rating_card_front_description">
+                Please let us know how we did with your support request. All feedback
+                is appreciated to help us improve our offering!
+              </p>
+              <form class="rating_card_front_rating_form">
+                <fieldset class="rating_form_field">
+                  <legend class="sr_only">Please select rating</legend>
+                  <label class="rating_form_label" for="rating_1">
+                    <input type="radio" id="rating_1" class="rating_form_input" name="rating" value="1">
+                    <span class="rating_form_circle">1</span>
+                  </label>
+                  <label class="rating_form_label" for="rating_2">
+                    <input type="radio" id="rating_2" class="rating_form_input" name="rating" value="2">
+                    <span class="rating_form_circle">2</span>
+                  </label>
+                  <label class="rating_form_label" for="rating_3">
+                    <input type="radio" id="rating_3" class="rating_form_input" name="rating" value="3">
+                    <span class="rating_form_circle">3</span>
+                  </label>
+                  <label class="rating_form_label" for="rating_4">
+                    <input type="radio" id="rating_4" class="rating_form_input" name="rating" value="4">
+                    <span class="rating_form_circle">4</span>
+                  </label>
+                  <label class="rating_form_label" for="rating_5">
+                    <input type="radio" id="rating_5" class="rating_form_input" name="rating" value="5">
+                    <span class="rating_form_circle">5</span>
+                  </label>
+                </fieldset>
+                <button class="submit_button" type="submit" disabled>Submit</button>
+              </form>
+        </div>
+        <!-- Rating Card Back -->
+        <div class="rating_card_back">
+          <div class="rating_card_back_img">
+            <img src="./images/illustration-thank-you.svg" alt="" />
+          </div>
+          <p class="rating_card_back_result">You selected&nbsp;<span id="rating_display">5</span>&nbsp;out of 5</h2>
+          <p class="rating_card_back_text">Thank you!</p>
+          <p class="rating_card_back_description">
+            We appreciate you taking the time to give a rating. If
+            you ever need more support, don’t hesitate to get in touch!</p>
+          <button class="reset_button">reset</button> 
+        </div>
+      </div>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

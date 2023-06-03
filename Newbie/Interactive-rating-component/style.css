@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --clr-primary-orange: hsl(25, 97%, 53%);
+
+  --clr-card-background: hsl(218, 21%, 15%);
+  --clr-icon-background: hsl(210, 20%, 22%);
+
+  --clr-neutral-Grey-800: hsl(217, 12%, 63%);
+  --clr-neutral-Grey-400: hsl(216, 12%, 54%);
+  --clr-neutral-Blue-400: hsl(213, 19%, 18%);
+  --clr-neutral-Blue-800: hsl(216, 12%, 8%);
+  --clr-neutral-White: hsl(0, 0%, 100%);
+
+  --ff-base: "Overpass", sans-serif;
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--clr-neutral-Blue-800);
+  color: var(--clr-neutral-White);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+
+  min-height: 100vh;
+
+  padding: 3rem 1.5rem;
+}
+
+.sr_only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Rating Card */
+
+.rating_card {
+  background-color: transparent;
+
+  min-width: 20.5em;
+  min-height: 22.6em;
+
+  border-radius: 1rem;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.rating_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.rating_card_front,
+.rating_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Rating Card Front */
+
+.rating_card_front {
+  background-color: var(--clr-card-background);
+  min-width: 20.5em;
+  min-height: 22.6em;
+
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.rating_card_front_star_icon {
+  background-color: var(--clr-icon-background);
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  padding: 0.82rem;
+
+  border-radius: 50%;
+}
+
+.rating_card_front_description {
+  color: var(--clr-neutral-Grey-800);
+
+  font-size: 0.88rem;
+  line-height: 1.4rem;
+
+  margin-top: -0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.rating_card_front_rating_form {
+  width: 100%;
+}
+
+.rating_form_field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border: none;
+}
+
+.rating_form_label {
+  background-color: var(--clr-icon-background);
+  color: var(--clr-neutral-Grey-800);
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  padding-top: 0.313rem;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  z-index: 200;
+}
+
+.rating_form_label:is(:hover, :focus) {
+  background-color: var(--clr-primary-orange);
+  color: var(--clr-neutral-White);
+}
+
+.rating_form_circle {
+  z-index: 2;
+}
+
+.rating_form_input {
+  position: absolute;
+  appearance: none;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-items: center;
+
+  z-index: -1;
+  cursor: pointer;
+}
+
+.rating_form_input:checked {
+  background-color: var(--clr-neutral-Grey-400);
+}
+
+.rating_form_input:checked + .rating_form_circle {
+  color: var(--clr-neutral-White);
+}
+
+.submit_button {
+  background-color: var(--clr-primary-orange);
+  color: var(--clr-neutral-White);
+
+  width: 100%;
+
+  font-size: 0.9rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  padding-top: 0.9rem;
+  padding-bottom: 0.7rem;
+  margin-top: 1.65rem;
+  margin-bottom: 0.5rem;
+
+  border-radius: 2rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+.submit_button:disabled {
+  filter: brightness(0.7);
+  cursor: default;
+}
+
+.submit_button:disabled:is(:hover, :focus) {
+  color: var(--clr-neutral-White);
+  background-color: var(--clr-primary-orange);
+}
+
+.submit_button:is(:hover, :focus) {
+  background-color: var(--clr-neutral-White);
+  color: var(--clr-primary-orange);
+}
+
+/* Rating Card Back */
+
+.rating_card_back {
+  background-color: var(--clr-card-background);
+  min-width: 20.5em;
+  min-height: 22.6em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 1rem;
+
+  padding: 1.5rem 1.5rem;
+  gap: 1.2rem;
+
+  transform: rotateY(180deg);
+}
+
+.rating_card_back_img {
+  width: 7em;
+}
+
+.rating_card_back_result {
+  background-color: var(--clr-neutral-Blue-400);
+  color: var(--clr-primary-orange);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.9rem;
+
+  padding: 0.6rem 0.7rem;
+  padding-bottom: 0.4rem;
+
+  border-radius: 1rem;
+}
+
+.rating_card_back_text {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.rating_card_back_description {
+  color: var(--clr-neutral-Grey-400);
+
+  font-size: 0.88rem;
+  line-height: 1.3rem;
+
+  margin-top: -0.5rem;
+}
+
+.reset_button {
+  background-color: var(--clr-primary-orange);
+  color: var(--clr-neutral-White);
+
+  width: 100%;
+
+  font-size: 0.9rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  border-radius: 2rem;
+  border: none;
+
+  padding: 0.6rem 0;
+
+  cursor: pointer;
+}
+
+.reset_button:is(:hover, :focus) {
+  background-color: var(--clr-neutral-White);
+  color: var(--clr-primary-orange);
+}
+
+@media (min-width: 720px) {
+  .rating_card {
+    min-width: 26em;
+    min-height: 26em;
+
+    border-radius: 2rem;
+  }
+
+  .rating_card_front {
+    min-width: 26em;
+    min-height: 26em;
+
+    border-radius: 2rem;
+
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .rating_card_front_star_icon {
+    width: 3rem;
+    height: 3rem;
+
+    padding: 1rem;
+  }
+
+  .rating_card_front_tittle {
+    font-size: 1.75rem;
+  }
+
+  .rating_card_front_description {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+
+    margin-top: -1.5rem;
+    margin-bottom: -0.4rem;
+  }
+
+  .rating_form_field {
+    width: 98%;
+  }
+
+  .rating_form_label {
+    font-size: 1rem;
+
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .submit_button {
+    width: 98%;
+
+    font-size: 1rem;
+
+    margin-top: 2.2rem;
+    margin-bottom: 0rem;
+  }
+
+  /* Rating Card Back */
+  .rating_card_back {
+    min-width: 26em;
+    min-height: 26em;
+
+    padding: 2rem;
+  }
+
+  .rating_card_back_img {
+    width: 9em;
+  }
+
+  .rating_card_back_text {
+    font-size: 2rem;
+  }
+
+  .rating_card_back_description {
+    font-size: 0.98rem;
+    line-height: 1.4rem;
+
+    margin-top: -0.5rem;
+  }
+
+  .reset_button {
+    border-radius: 2rem;
+
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+}
