@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="result_summary_card">
+      <h1 class="sr-only">Results summary component</h1>
+      <container class="result_section">
+        <h2 class="result_section_tittle">Your Result</h2>
+        <div class="result_section_cricle_box">
+          <span class="sr-only">total marks scored</span>
+          <p class="scored_mark">76</p>
+          <span class="sr-only">out</span>
+          <p class="scored_outof">of 100</p>
+        </div>
+        <p class="result_section_appriciation">Great</p>
+        <p class="result_section_description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </container>
+
+      <container class="summary_section">
+        <h2 class="summary_section_tittle">Summary</h2>
+        <h2 class="sr-only">Subjects name and score</h2>
+        <ul class="summary_marks_box">
+          <li class="marks_box_subject" id="reaction">
+            <h3 class="marks_box_subject_name">
+              <img src="./images/icon-reaction.svg" alt="" />
+              Reaction
+            </h3>
+            <p class="subject_marks_scored">
+              80
+              <span class="subject_marks_compared_score">
+                <abbr title="out of" aria-label="out of">/</abbr>
+                100
+              </span>
+            </p>
+          </li>
+          <li class="marks_box_subject" id="memory">
+            <h3 class="marks_box_subject_name">
+              <img src="./images/icon-memory.svg" alt="" />
+              Memory
+            </h3>
+            <p class="subject_marks_scored">
+              92
+              <span class="subject_marks_compared_score">
+                <abbr title="out of">/</abbr>
+                100
+              </span>
+            </p>
+          </li>
+          <li class="marks_box_subject" id="verbal">
+            <h3 class="marks_box_subject_name">
+              <img src="./images/icon-verbal.svg" alt="" />
+              Verbal
+            </h3>
+            <p class="subject_marks_scored">
+              61
+              <span class="subject_marks_compared_score">
+                <abbr title="out of">/</abbr>
+                100
+              </span>
+            </p>
+          </li>
+          <li class="marks_box_subject" id="Visual">
+            <h3 class="marks_box_subject_name">
+              <img src="./images/icon-visual.svg" alt="" />
+              Visual
+            </h3>
+            <p class="subject_marks_scored">
+              72
+              <span class="subject_marks_compared_score">
+                <abbr title="out of">/</abbr>
+                100
+              </span>
+            </p>
+          </li>
+        </ul>
+        <button class="btn">Continue</button>
+      </container>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
