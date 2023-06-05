@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Results summary component</title>
     <!-- CSS File -->
     <link rel="stylesheet" href="./style.css" />
@@ -35,7 +43,6 @@
 
       <container class="summary_section">
         <h2 class="summary_section_tittle">Summary</h2>
-        <h2 class="sr-only">Subjects name and score</h2>
         <ul class="summary_marks_box">
           <li class="marks_box_subject" id="reaction">
             <h3 class="marks_box_subject_name">
@@ -58,7 +65,7 @@
             <p class="subject_marks_scored">
               92
               <span class="subject_marks_compared_score">
-                <abbr title="out of">/</abbr>
+                <abbr title="out of" aria-label="out of">/</abbr>
                 100
               </span>
             </p>
@@ -71,7 +78,7 @@
             <p class="subject_marks_scored">
               61
               <span class="subject_marks_compared_score">
-                <abbr title="out of">/</abbr>
+                <abbr title="out of" aria-label="out of">/</abbr>
                 100
               </span>
             </p>
@@ -84,7 +91,7 @@
             <p class="subject_marks_scored">
               72
               <span class="subject_marks_compared_score">
-                <abbr title="out of">/</abbr>
+                <abbr title="out of" aria-label="out of">/</abbr>
                 100
               </span>
             </p>
