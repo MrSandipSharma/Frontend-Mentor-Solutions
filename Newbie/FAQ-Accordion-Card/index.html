@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="faq_card">
+        <div class="faq_card_image"></div>
+        <div class="faq_card_accordion">
+          <h1 class="accordion_title">
+            <abbr title="Frequently Asked Questions">FAQ</abbr>
+          </h1>
+          <details class="accordion_summary">
+            <summary class="summary_tittle">
+              How many team members can I invite?
+            </summary>
+            <p class="summary_description">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </details>
+
+          <details class="accordion_summary" open="">
+            <summary class="summary_tittle">
+              What is the maximum file upload size?
+            </summary>
+            <p class="summary_description">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </details>
+
+          <details class="accordion_summary">
+            <summary class="summary_tittle">
+              How do I reset my password?
+            </summary>
+            <p class="summary_description">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </details>
+
+          <details class="accordion_summary">
+            <summary class="summary_tittle">
+              Can I cancel my subscription?
+            </summary>
+            <p class="summary_description">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </details>
+
+          <details class="accordion_summary">
+            <summary class="summary_tittle">
+              Do you provide additional support?
+            </summary>
+            <p class="summary_description">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </details>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

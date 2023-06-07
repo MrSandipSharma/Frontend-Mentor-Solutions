@@ -1,0 +1,292 @@
+:root {
+  --clr-Primary-desaturated-blue: hsl(238, 29%, 16%);
+  --clr-Primary-Soft-red: hsl(14, 88%, 65%);
+  --clr-Primary-white: hsl(0, 0%, 100%);
+
+  --clr-gradient-violet: hsl(273, 75%, 66%);
+  --clr-gradient-blue: hsl(240, 73%, 65%);
+
+  --clr-Neutral-grayish-blue: hsl(237, 12%, 33%);
+  --clr-Neutral-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --clr-Dividers: hsl(240, 5%, 91%);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-base: "Kumbh Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      0deg,
+      var(--clr-gradient-blue),
+      var(--clr-gradient-violet)
+    )
+    no-repeat;
+
+  color: var(--clr-Neutral-grayish-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+
+  min-height: 100vh;
+
+  padding: 3rem 1rem;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+summary::marker {
+  content: "";
+}
+
+.faq_card {
+  background-color: var(--clr-Primary-white);
+
+  width: 20.5em;
+
+  border-radius: 1.5rem;
+
+  position: relative;
+}
+
+.faq_card::before {
+  content: "";
+  position: absolute;
+
+  background: url("./images/illustration-woman-online-mobile.svg"),
+    url("./images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center top, center top 107px;
+
+  width: 15em;
+  height: 14em;
+
+  top: -6.8rem;
+  left: 2.7rem;
+
+  animation: ps-mobile 0.4s;
+}
+
+.faq_card_accordion {
+  display: grid;
+  place-items: center;
+  gap: 0.9rem;
+
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.accordion_title {
+  color: var(--clr-Primary-desaturated-blue);
+
+  font-weight: var(--fw-bold);
+
+  text-align: center;
+
+  margin-top: 6.15rem;
+  margin-bottom: 0.7rem;
+}
+
+.accordion_summary {
+  width: 85%;
+
+  border-bottom: 1px solid var(--clr-Dividers);
+
+  padding-bottom: 0.4rem;
+}
+
+.summary_tittle {
+  font-size: 0.8rem;
+
+  line-height: 1.5rem;
+  letter-spacing: 0.025rem;
+
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+
+  cursor: pointer;
+  list-style: none;
+
+  position: relative;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.summary_tittle:focus-visible {
+  outline: 0.15rem dotted var(--clr-Primary-Soft-red);
+}
+
+.summary_tittle:hover {
+  color: var(--clr-Primary-Soft-red);
+}
+
+.summary_tittle::after {
+  content: "";
+  position: absolute;
+
+  background: url(./images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 1rem;
+  height: 1rem;
+
+  top: 0.8rem;
+  right: 0.13rem;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.summary_description {
+  color: var(--clr-Neutral-dark-grayish-blue);
+
+  font-size: 0.8rem;
+
+  letter-spacing: -0.017rem;
+  line-height: 1.15rem;
+
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.accordion_summary[open] .summary_tittle::after {
+  transform: rotate(-180deg);
+
+  top: 0.5rem;
+  right: 0;
+}
+
+.accordion_summary[open] {
+  padding: 0;
+}
+
+.accordion_summary[open] .summary_tittle {
+  color: var(--clr-Primary-desaturated-blue);
+
+  font-weight: var(--fw-bold);
+
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 720px) {
+  .faq_card {
+    display: flex;
+    flex-direction: row;
+
+    min-width: 57.5em;
+    min-height: 31.8em;
+
+    margin-left: 3.2em;
+  }
+
+  .faq_card::before {
+    content: "";
+    position: absolute;
+
+    width: 100px;
+    height: 200px;
+
+    background-image: url(./images/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: unset;
+
+    left: -3em;
+    top: 12.2em;
+
+    z-index: 2;
+
+    filter: drop-shadow(0 13px 15px rgba(0, 0, 0, 0.3));
+
+    animation: ps-desktop 0.4s;
+  }
+
+  .faq_card_image {
+    width: 100%;
+
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 307% 46%, 110.3% 67.7%;
+  }
+
+  .faq_card_accordion {
+    width: 100%;
+
+    place-items: flex-start;
+    gap: 0.6rem;
+
+    font-weight: var(--fw-regular);
+
+    margin-left: 1.95rem;
+    padding: 1.9rem 0;
+    padding-bottom: 4.9rem;
+  }
+
+  .accordion_title {
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .accordion_summary {
+    width: 78%;
+  }
+
+  .summary_tittle {
+    font-size: 0.9rem;
+    letter-spacing: -0.009rem;
+  }
+
+  .summary_tittle::after {
+    content: "";
+    position: absolute;
+
+    background: url(./images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+
+    width: 1rem;
+    height: 1rem;
+
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .summary_description {
+    padding-right: 0rem;
+  }
+
+  .accordion_summary[open] .summary_tittle::after {
+    top: 0.4rem;
+    right: 1.2rem;
+  }
+}
+
+/* Animation */
+@keyframes ps-mobile {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}
+
+@keyframes ps-desktop {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
