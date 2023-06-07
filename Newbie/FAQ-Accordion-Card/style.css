@@ -61,6 +61,8 @@ summary::marker {
   border-radius: 1.5rem;
 
   position: relative;
+  
+  box-shadow: 0 10px 10px rgba(0,0,0,.1), 0 40px 40px rgba(0,0,0,.2);
 }
 
 .faq_card::before {
