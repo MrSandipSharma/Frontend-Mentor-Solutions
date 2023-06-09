@@ -224,7 +224,7 @@ body {
   margin-top: 0.4rem;
 }
 
-@media (min-width: 52em) {
+@media (min-width: 60em) {
   body {
     background-image: url(./images/bg-pattern-top-desktop.svg),
       url(./images/bg-pattern-bottom-desktop.svg);
