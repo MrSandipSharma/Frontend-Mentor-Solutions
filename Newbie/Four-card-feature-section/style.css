@@ -225,7 +225,7 @@ body {
 }
 
 /* Desktop Version */
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   /* Main Card Info Section */
   .card_info {
     padding: 0 26.2rem;
