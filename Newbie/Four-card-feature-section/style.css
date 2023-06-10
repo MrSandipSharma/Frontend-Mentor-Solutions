@@ -224,11 +224,11 @@ body {
   width: 100%;
 }
 
-/* Desktop Version */
-@media (min-width: 900px) {
+/* Tablet Version */
+@media (min-width: 820px) {
   /* Main Card Info Section */
   .card_info {
-    padding: 0 26.2rem;
+    padding: 0 15rem;
     margin-top: 3rem;
   }
 
@@ -322,3 +322,13 @@ body {
     margin-top: 0rem;
   }
 }
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+  /* Main Card Info Section */
+  .card_info {
+    padding: 0 27rem;
+    margin-top: 3rem;
+  }
+}
+
