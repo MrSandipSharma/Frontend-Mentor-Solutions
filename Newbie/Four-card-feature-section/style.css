@@ -89,8 +89,9 @@ body {
   color: var(--clr_neutral_Grayish-Blue);
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Main Card */
