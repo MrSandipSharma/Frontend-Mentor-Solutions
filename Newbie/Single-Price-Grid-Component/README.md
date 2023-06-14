@@ -27,7 +27,7 @@ at this point I don't have an idea about `how to write a proper README.md file` 
 * for `Animation` I used `Gsap`
 * for spliting text I used `split-type library` you can check the library [here](https://npm.io/package/split-type)
 
-## Accesibility Issue
+## Accessibility Issue
 
 * Got a lot of `Color Contrast Issues`
 
