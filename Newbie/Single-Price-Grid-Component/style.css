@@ -1,0 +1,283 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin padding
+  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* List style */
+li {
+  list-style: none;
+}
+
+/* Root variables */
+:root {
+  --clr_primary_Cyan: hsl(179, 62%, 43%);
+  --clr_primary_Cyan_light: hsl(178.7, 55.8%, 47.1%);
+  --clr_primary_Yellow: hsl(71, 73%, 54%);
+  --clr_primary_white: hsl(0, 0%, 100%);
+
+  --clr_neutral_Light-Gray: hsl(204, 43%, 93%);
+  --clr_neutral_Grayish-Blue: hsl(218, 22%, 67%);
+
+  --ff-base: "Karla", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* sr-only */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  background-color: var(--clr_neutral_Light-Gray);
+  color: var(--clr_primary_white);
+  min-height: 100vh;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  padding: 2rem;
+}
+
+/* Main Card */
+.card {
+  margin-top: 2.5rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0rem 0.9375rem 1.875rem rgba(0, 81, 171, 0.148847);
+}
+
+/* Card Information */
+.card_info {
+  background-color: var(--clr_primary_white);
+  padding: 1.5rem;
+}
+
+/* Card Information Title*/
+.card_info__title {
+  color: var(--clr_primary_Cyan);
+  font-size: 1.26rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.9rem;
+  letter-spacing: -0.02rem;
+}
+
+/* Card Information Detail*/
+.card_info__detail {
+  color: var(--clr_primary_Yellow);
+  line-height: 1.2rem;
+  letter-spacing: -0.02rem;
+  font-weight: var(--fw-bold);
+  margin-top: 1.3rem;
+}
+
+/* Card Information Description*/
+.card_info_description {
+  color: var(--clr_neutral_Grayish-Blue);
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.8em;
+  letter-spacing: -0.02rem;
+  font-size: 0.9rem;
+}
+
+/* Card Subscription Section */
+.card_subscription {
+  background-color: var(--clr_primary_Cyan);
+  color: var(--clr_primary_white);
+  padding: 1.5rem;
+}
+
+/* Card Subscription Section  Title*/
+.card_subscription__title {
+  font-size: 1.1rem;
+  margin-top: -0.1rem;
+}
+
+/* Subscription Section Price Box*/
+.card_subscription__price {
+  display: flex;
+  align-items: center;
+}
+
+/* Subscription Section Price*/
+.price_money {
+  margin-top: 0.55rem;
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+}
+
+/* Subscription Section Price Validity*/
+.price_validity {
+  color: var(--clr_neutral_Light-Gray);
+  margin-left: 0.7rem;
+  margin-top: 0.5rem;
+  letter-spacing: -0.01rem;
+}
+
+/* Subscription Section Description*/
+.card_subscription__desc {
+  letter-spacing: -0.01rem;
+  line-height: 1.6rem;
+  margin-top: -0.1rem;
+}
+
+/* Subscription Section Sign up button*/
+.btn {
+  background-color: var(--clr_primary_Yellow);
+  color: white;
+  font-weight: var(--fw-bold);
+  width: 100%;
+  margin-top: 1.65rem;
+  padding: 0.75rem;
+  padding-top: 0.8em;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Card Features Section */
+.card_features {
+  background-color: var(--clr_primary_Cyan_light);
+  padding: 1.5rem;
+}
+
+/* Features Section Title */
+.card_features__title {
+  font-size: 1.2rem;
+  margin-top: -0.3rem;
+  letter-spacing: -0.07rem;
+}
+
+/* Features Section Rule List*/
+.card_features__list {
+  margin-top: 0.88rem;
+  letter-spacing: -0.035rem;
+  font-size: 0.93rem;
+  line-height: 1.25rem;
+}
+
+/* Desktop Version */
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Card Main */
+  .card {
+    max-width: 39.7em;
+    border-radius: 0.5rem;
+    display: grid;
+    margin-top: 0;
+  }
+
+  /* Card Info Section */
+  .card_info {
+    grid-column: 1 / span 2;
+    padding: 2.5rem;
+  }
+
+  /* Info Section Title */
+  .card_info__title {
+    font-size: 1.5rem;
+    letter-spacing: -0.02rem;
+  }
+
+  /* Info Section Detail */
+  .card_info__detail {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    letter-spacing: -0.025rem;
+  }
+
+  /* Info Section Description */
+  .card_info_description {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1.7rem;
+    letter-spacing: -0.01rem;
+    font-size: 1rem;
+  }
+
+  /* Subscription Section */
+  .card_subscription {
+    width: 19.8em;
+    padding: 2.5rem;
+    padding-bottom: 2.4rem;
+  }
+
+  /* Feature Section */
+  .card_features {
+    width: 20em;
+    padding: 2.5rem;
+    padding-bottom: 2.4rem;
+  }
+}
