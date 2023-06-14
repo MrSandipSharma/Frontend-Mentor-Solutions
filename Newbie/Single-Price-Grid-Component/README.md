@@ -19,7 +19,7 @@ at this point I don't have an idea about `how to write a proper README.md file` 
 
 ## CSS 
 
-* for layout it is the best time to use `flexbox` but I used 'Grid` because I wanted to practice `Grid`
+* for layout it is the best time to use `flexbox` but I used `Grid` because I wanted to practice `Grid`
 * used Colors according to `style-guide.md`
 
 ## Animation
