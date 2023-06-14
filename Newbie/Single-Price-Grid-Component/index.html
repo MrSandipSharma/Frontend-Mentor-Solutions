@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1 class="sr-only">Single Price Grid Component</h1>
+      <div class="card_info">
+        <h2 class="card_info__title">Join our community</h2>
+        <p class="card_info__detail">
+          30-day, hassle-free money back guarantee
+        </p>
+        <p class="card_info_description">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+
+      <div class="card_subscription">
+        <h2 class="card_subscription__title">Monthly Subscription</h2>
+        <div class="card_subscription__price">
+          <span class="sr-only">price</span>
+          <span class="price_money">&dollar;29</span>
+          <p class="price_validity">per month</p>
+        </div>
+        <p class="card_subscription__desc">
+          Full access for less than &dollar;1 a day
+        </p>
+        <button class="btn">Sign Up</button>
+      </div>
+
+      <div class="card_features">
+        <h2 class="card_features__title">Why Us</h2>
+        <ul class="card_features__list">
+          <li class="card_features__item">Tutorials by industry experts</li>
+          <li class="card_features__item">Peer &amp; expert code review</li>
+          <li class="card_features__item">Coding exercises</li>
+          <li class="card_features__item">Access to our GitHub repos</li>
+          <li class="card_features__item">Community forum</li>
+          <li class="card_features__item">Flashcard decks</li>
+          <li class="card_features__item">New videos every week</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- JS File -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
