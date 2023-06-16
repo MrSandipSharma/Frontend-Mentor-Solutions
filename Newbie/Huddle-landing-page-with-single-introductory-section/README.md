@@ -48,3 +48,19 @@ one for `illustration-mockups image` and second one contain all the other inform
 * used three types of screen sizes
   `custom`, `700px`, `1250px`
  
+## Animation
+
+* for `Animation` I used `Gsap`
+* for spliting text I used `split-type library` you can check the library [here](https://npm.io/package/split-type)
+
+## Accessibility Issue
+
+* There is no `Accessibility Issues` according to `exe`
+
+## What's Next
+
+* and for `accessibility` wants to find a way their user can choose he wants `animation` or not.
+* Java Script
+
+*Thanks for reading my `README.md` 
+I'm waiting for your Valuable Feedback*
