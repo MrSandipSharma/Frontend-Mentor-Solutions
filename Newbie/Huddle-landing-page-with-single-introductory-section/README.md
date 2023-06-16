@@ -56,7 +56,7 @@ one for `illustration-mockups image` and second one contain all the other inform
 
 ## Accessibility Issue
 
-* There is no `Accessibility Issues` according to `exe`
+* There is no `Accessibility Issues` according to `axe`
 
 ## What's Next
 
