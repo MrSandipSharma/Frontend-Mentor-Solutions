@@ -44,6 +44,7 @@ one for `illustration-mockups image` and second one contain all the other inform
 ## CSS
 * explored some new `css reset`
 * used `Mobile First Workflow Approach`
+* Hover `Animation` on `Interactive Elements`
 * made responsive using `media queries`
 * used three types of screen sizes
   `custom`, `700px`, `1250px`
