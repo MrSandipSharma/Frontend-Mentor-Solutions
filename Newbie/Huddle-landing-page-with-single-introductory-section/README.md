@@ -7,8 +7,9 @@
 This is my Solution For [Huddle landing page with single introductory section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub) There are some technologies that I used while building this challenge.
 * HTML
 * CSS
+* Flex-box
 * GSAP
-* Prettier code formatter
+* BEM
 
 ## What I learned
 * Learned about a new `Meta Tag` which can useful for changing the theme of browser [theme-color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color)
