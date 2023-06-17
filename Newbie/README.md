@@ -82,7 +82,7 @@ actually they all challenges are really fun and you are going to learn a lot whi
  </div>
  
  ### 4. NFT Preview Card Component
-<img src="https://img.shields.io/badge/Date-22/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+<img src="https://img.shields.io/badge/Date-26/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
 
 `NFT Preview Card Component` was great challenge for me 
 
@@ -98,5 +98,50 @@ actually they all challenges are really fun and you are going to learn a lot whi
  </span>
  <span>
   <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/nft-preview-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
+ 
+ ### 5. 3-Column Preview Card Component
+<img src="https://img.shields.io/badge/Date-27/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+
+`3-Column Preview Card Component` was great challenge for me 
+
+* Learned about decorative images
+* Explored different aspects of `gsap` animation
+
+#### Approach
+
+* Solution build on `Mobile first workflow approach`
+* Solution is fully `responsive` for all devices
+* Added animation using `gsap`
+
+<div align="left">
+<span>
+ <a href="https://github.com/MrSandipSharma/Frontend-Mentor-Solutions/tree/main/Newbie/3-column-preview-card-component"><img src="https://img.shields.io/badge/Source Code-blue?style=for-the-badge&logo=&logoColor=white" alt="Source Code"></a>
+ </span>
+ <span>
+  <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/3-column-preview-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
+ 
+  ### 6. Stats Preview Card Component
+<img src="https://img.shields.io/badge/Date-29/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+
+`Stats Preview Card Component` was a fun challenge for me and I learned a lot while building this challenge
+
+* Learned about `mix-blend-mode`
+
+#### Approach
+
+* Solution build on `Mobile first workflow approach`
+* Solution is fully `responsive` for all devices
+* Added animation using `gsap`
+
+<div align="left">
+<span>
+ <a href="https://github.com/MrSandipSharma/Frontend-Mentor-Solutions/tree/main/Newbie/stats-preview-card-component"><img src="https://img.shields.io/badge/Source Code-blue?style=for-the-badge&logo=&logoColor=white" alt="Source Code"></a>
+ </span>
+ <span>
+  <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/stats-preview-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
  </span>
  </div>
