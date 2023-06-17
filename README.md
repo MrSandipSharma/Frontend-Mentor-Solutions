@@ -13,8 +13,6 @@ I am Sandip Sharma a Frontend Developer based in india.
 I have a believe on the thought
 `Explore more learn more` and I just like exploring new things.
 
-
-
 ## 🛠 Tools
 For completing these challenges I use a lot of tools like :
   * VS Code : My Code Editor
@@ -35,7 +33,7 @@ For completing these challenges I uses these skills :
 
 and I continuously working on learning new things.
 and here I have quotes :
-`I am not perfect yet but I am on the path to becoming a pro developer.`
+> I am not perfect yet but I am on the path to becoming a pro developer.
 ## FAQ
 
 And here are the answers to the most frequently asked questions
