@@ -38,7 +38,7 @@ actually they all challenges are really fun and you are going to learn a lot whi
 ### 2. Product Preview Card Component
 <img src="https://img.shields.io/badge/Date-24/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
 
-`Product Preview Card Component` was great challenge for me a learned a lot of things while completting this challenge
+`Product Preview Card Component` was great challenge for me and I learned a lot of things while completting this challenge
 
 * learned about `<picture> tag` it helps to handle different images for different devices
 * Used `<article> tag` for first time
@@ -55,5 +55,28 @@ actually they all challenges are really fun and you are going to learn a lot whi
  </span>
  <span>
   <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/product-preview-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
+ 
+ ### 3. Profile Card Component
+<img src="https://img.shields.io/badge/Date-24/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+
+`Profile Card Component` was great challenge for me I used some different technologies for first time
+
+* handled `background-images` for first time
+* used `flex-box` and `root variables`
+
+#### Approach
+
+* Solution build on `Mobile first workflow approach`
+* Solution is fully `responsive` for all devices
+* Added animation using `gsap`
+
+<div align="left">
+<span>
+ <a href="https://github.com/MrSandipSharma/Frontend-Mentor-Solutions/tree/main/Newbie/profile-card-component"><img src="https://img.shields.io/badge/Source Code-blue?style=for-the-badge&logo=&logoColor=white" alt="Source Code"></a>
+ </span>
+ <span>
+  <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/profile-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
  </span>
  </div>
