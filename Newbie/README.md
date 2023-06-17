@@ -80,3 +80,23 @@ actually they all challenges are really fun and you are going to learn a lot whi
   <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/profile-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
  </span>
  </div>
+ 
+ ### 4. NFT Preview Card Component
+<img src="https://img.shields.io/badge/Date-22/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+
+`NFT Preview Card Component` was great challenge for me 
+
+#### Approach
+
+* Solution build on `Mobile first workflow approach`
+* Solution is fully `responsive` for all devices
+* Added animation using `gsap`
+
+<div align="left">
+<span>
+ <a href="https://github.com/MrSandipSharma/Frontend-Mentor-Solutions/tree/main/Newbie/nft-preview-card-component"><img src="https://img.shields.io/badge/Source Code-blue?style=for-the-badge&logo=&logoColor=white" alt="Source Code"></a>
+ </span>
+ <span>
+  <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/nft-preview-card-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
