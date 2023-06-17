@@ -333,3 +333,19 @@ actually they all challenges are really fun and you are going to learn a lot whi
   <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/huddle-landing-page-with-single-introductory-section/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
  </span>
  </div>
+ 
+ 
+ *Thanks for reading my `README.md`*
+ 
+ ## Say `Hello 👏` to me
+
+If you liked my work or wants to connect with me you can follow my social media accounts or you can say me a `Hello 👏` 
+
+<div align="center">
+<span>
+<a href="https://www.instagram.com/sandip_sharma_24/?igshid=NTc4MTIwNjQ2YQ%3D%3D"><img src="https://img.shields.io/badge/Profile-Instagram-red?style=for-the-badge&logo=&logoColor=white" alt="Instagram"></a>
+ </span>
+ <span>
+  <a href="https://www.frontendmentor.io/profile/MrSandipSharma"><img src="https://img.shields.io/badge/Profile-Frontend%20Mentor-blue?style=for-the-badge&logo=&logoColor=white" alt="frontendmentor"></a>
+ </span>
+ </div>
