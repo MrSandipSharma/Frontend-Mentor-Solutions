@@ -1,9 +1,13 @@
+<h1 align="center"><img src="https://firebasestorage.googleapis.com/v0/b/github-images-51d28.appspot.com/o/Frontend_Mentor_Solutions.png?alt=media&token=e488f338-3a7f-4c2b-825f-7b53527b3f1f" alt="Frontend Mentor Solutions"</h1>
 
-# Frontend Mentor Solutions
-
-[![Frontend Mentor](https://img.shields.io/badge/Frontend-Mentor-blue?style=for-the-badge&logo=&logoColor=white)](https://www.frontendmentor.io/challenges) 
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-red?style=for-the-badge&logo=&logoColor=white)](https://www.frontendmentor.io/challenges)
+<div align="center">
+<span>
+ <a href="https://www.frontendmentor.io/challenges"><img src="https://img.shields.io/badge/Frontend-Mentor-blue?style=for-the-badge&logo=&logoColor=white" alt="Frontend Mentor"></a>
+ </span>
+ <span>
+  <a href="https://www.frontendmentor.io/challenges"><img src="https://img.shields.io/badge/Live-Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
 
 ## Welcome 👏
 Well, This repository belongs to all the solutions that I created for `Frontend Mentor Challenges` and actually they are fun challenges and you also can learn a lot from the `frontend mentor community`
@@ -68,9 +72,16 @@ Well, while writing this `README.md` file I learned about some technologies that
  - [shields](https://shields.io/category/social) : For creating custom `Badges`
 
 *Thanks for reading my `README.md`*
+ 
+ ## Say `Hello 👏` to me
 
 If you liked my work or wants to connect with me you can follow my social media accounts or you can say me a `Hello 👏` 
 
-[![Instagram](https://img.shields.io/badge/Profile-Instagram-red?style=for-the-badge&logo=&logoColor=white)](https://www.instagram.com/sandip_sharma_24/?igshid=NTc4MTIwNjQ2YQ%3D%3D) 
-
-[![frontendmentor](https://img.shields.io/badge/Profile-Frontend%20Mentor-blue?style=for-the-badge&logo=&logoColor=white)](https://www.frontendmentor.io/profile/MrSandipSharma) 
+<div align="center">
+<span>
+<a href="https://www.instagram.com/sandip_sharma_24/?igshid=NTc4MTIwNjQ2YQ%3D%3D"><img src="https://img.shields.io/badge/Profile-Instagram-red?style=for-the-badge&logo=&logoColor=white" alt="Instagram"></a>
+ </span>
+ <span>
+  <a href="https://www.frontendmentor.io/profile/MrSandipSharma"><img src="https://img.shields.io/badge/Profile-Frontend%20Mentor-blue?style=for-the-badge&logo=&logoColor=white" alt="frontendmentor"></a>
+ </span>
+ </div>
