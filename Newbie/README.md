@@ -335,8 +335,6 @@ actually they all challenges are really fun and you are going to learn a lot whi
  </div>
  
  
- *Thanks for reading my `README.md`*
- 
  ## Say `Hello 👏` to me
 
 If you liked my work or wants to connect with me you can follow my social media accounts or you can say me a `Hello 👏` 
@@ -349,3 +347,5 @@ If you liked my work or wants to connect with me you can follow my social media 
   <a href="https://www.frontendmentor.io/profile/MrSandipSharma"><img src="https://img.shields.io/badge/Profile-Frontend%20Mentor-blue?style=for-the-badge&logo=&logoColor=white" alt="frontendmentor"></a>
  </span>
  </div>
+
+*Thanks for reading my `README.md`*
