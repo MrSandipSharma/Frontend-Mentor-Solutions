@@ -73,3 +73,6 @@ Well, while writing this `README.md` file I learned about some technologies that
 
 If you liked my work or wants to connect with me you can follow my social media accounts or you can say me a `Hello 👏` 
 
+[![Instagram](https://img.shields.io/badge/Profile-Instagram-red?style=for-the-badge&logo=&logoColor=white)](https://www.instagram.com/sandip_sharma_24/?igshid=NTc4MTIwNjQ2YQ%3D%3D) 
+
+[![frontendmentor](https://img.shields.io/badge/Profile-Frontend%20Mentor-blue?style=for-the-badge&logo=&logoColor=white)](https://www.frontendmentor.io/profile/MrSandipSharma) 
