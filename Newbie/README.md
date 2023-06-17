@@ -17,3 +17,18 @@ actually they all challenges are really fun and you are going to learn a lot whi
 ## Let's explore all the solution one by one 😃
 
 ### 1. QR Code Component
+<img src="https://img.shields.io/badge/Date-23/05/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+
+`QR Code Component` is my first solution at `Frontend Mentor` and believe me it was a fun challenge and I tried my best to write an `Accessible` code using `semantic HTML`
+
+* while building this challenge I explored about `Prettier Code Formatter`
+* Solution build on `Mobile first workflow approach`
+
+<div align="left">
+<span>
+ <a href="https://www.frontendmentor.io/challenges"><img src="https://img.shields.io/badge/Source Code-blue?style=for-the-badge&logo=&logoColor=white" alt="Source Code"></a>
+ </span>
+ <span>
+  <a href="https://www.frontendmentor.io/challenges"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
