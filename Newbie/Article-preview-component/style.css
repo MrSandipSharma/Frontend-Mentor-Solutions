@@ -1,0 +1,345 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* root variables */
+:root {
+  --clr-Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+  --clr-description: hsl(217, 19%, 27%);
+  --clr-Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+  --clr-Grayish_Blue: hsl(212, 23%, 69%);
+  --clr-Light_Grayish_Blue: hsl(210, 46%, 95%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-popup_background: hsl(217, 20%, 18%);
+  --clr-popup_tittle: hsl(212, 24%, 86%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --ff-base: "Manrope", sans-serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+/* Sr only */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  background-color: var(--clr-Light_Grayish_Blue);
+  color: var(--clr-Very_Dark_Grayish_Blue);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4.6rem 1.5rem;
+}
+
+.article {
+  max-width: 22.5rem;
+  position: relative;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: 0rem 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
+}
+
+.article_image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 25%;
+  filter: brightness(1.05);
+}
+
+.article_content {
+  padding: 2rem;
+  background-color: var(--clr-white);
+}
+
+.content__tittle {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.014rem;
+  line-height: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.content__description {
+  color: var(--clr-description);
+  font-size: 0.8rem;
+  letter-spacing: 0.015rem;
+  line-height: 1.25rem;
+  margin-top: 0.8rem;
+}
+
+.writter_profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: -0.75rem;
+}
+
+.profile__figure {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.figure_image {
+  width: 17%;
+  border-radius: 50%;
+}
+
+.figure__name {
+  font-weight: var(--fw-bold);
+  font-size: 0.8rem;
+  line-height: 0.7rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0.25rem;
+}
+
+.time {
+  color: var(--clr-Grayish_Blue);
+  font-size: 0.83rem;
+}
+
+.content__share-btn {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.6s ease-in-out;
+}
+
+.content__share-btn img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.content__share-btn:focus {
+  outline: 0.2rem dotted var(--clr-Light_Grayish_Blue);
+  outline-offset: 0.2rem;
+}
+
+.popup {
+  opacity: 0;
+  background: var(--clr-popup_background);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 0.2rem;
+  transition: 0.6s ease-in-out;
+}
+
+.popup_tittle {
+  color: var(--clr-popup_tittle);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  margin-right: -1.3rem;
+}
+
+.social_share {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* aria-expanded="true" behaviour */
+
+[aria-expanded="true"] + .popup {
+  opacity: 1;
+}
+
+[aria-expanded="true"] > img {
+  filter: brightness(0) invert(1);
+}
+
+[aria-expanded="true"] {
+  background-color: var(--clr-Desaturated_Dark_Blue);
+}
+
+@media (min-width: 900px) {
+  .article {
+    max-width: 45.6em;
+    overflow: visible;
+    display: flex;
+  }
+
+  .article_image {
+    height: 280px;
+    width: 105%;
+    object-position: 0 25%;
+    border-radius: 0.7rem 0 0 0.7rem;
+  }
+
+  .article_content {
+    padding: 2rem 2.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+
+  .content__tittle {
+    font-size: 1.25rem;
+    margin-top: 0;
+    letter-spacing: 0.014rem;
+    line-height: 1.75rem;
+  }
+
+  .content__description {
+    margin-top: 0.78rem;
+    letter-spacing: 0.013rem;
+  }
+
+  .writter_profile {
+    margin-top: 1.2rem;
+    gap: 3rem;
+  }
+
+  .profile__figure {
+    margin-left: -4.7rem;
+  }
+
+  .figure_image {
+    width: 13%;
+  }
+
+  .figure__name {
+    letter-spacing: 0.01rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.31rem;
+  }
+
+  .content__share-btn {
+    right: 2.5rem;
+    bottom: 2.3rem;
+  }
+
+  .content__share-btn img {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .popup {
+    left: unset;
+    bottom: 6rem;
+    width: 15.5em;
+    height: 3.45rem;
+    right: -4.25rem;
+    border-radius: 0.6rem;
+  }
+
+  .popup_tittle {
+    font-weight: var(--fw-regular);
+    font-size: 0.75rem;
+    letter-spacing: 0.34rem;
+    margin-top: 0.1rem;
+    margin-left: 0.3rem;
+    margin-right: -1.45rem;
+  }
+
+  .social_share {
+    margin-top: 1.1rem;
+  }
+
+  .popup::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    bottom: -0.55rem;
+    left: 7.25rem;
+    transform: rotate(45deg);
+    background: var(--clr-Very_Dark_Grayish_Blue);
+  }
+}
