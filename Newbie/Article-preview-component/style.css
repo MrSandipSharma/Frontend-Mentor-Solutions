@@ -124,7 +124,7 @@ body {
 
 .article_image {
   height: 200px;
-  width: 17em;
+  width: 100%;
   object-fit: cover;
   object-position: 0 25%;
   filter: brightness(1.05);
@@ -259,7 +259,7 @@ body {
 
   .article_image {
     height: 100%;
-    width: 100%;
+    width: 17em;
     object-position: 0 25%;
     border-radius: 0.7rem 0 0 0.7rem;
   }
