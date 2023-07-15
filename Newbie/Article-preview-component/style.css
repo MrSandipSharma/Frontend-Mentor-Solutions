@@ -251,13 +251,14 @@ body {
 
 @media (min-width: 900px) {
   .article {
-    max-width: 45.6em;
+    max-width: 44.6em;
     overflow: visible;
     display: flex;
+    height: 17em;
   }
 
   .article_image {
-    height: 280px;
+    height: 100%;
     width: 105%;
     object-position: 0 25%;
     border-radius: 0.7rem 0 0 0.7rem;
