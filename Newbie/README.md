@@ -333,6 +333,30 @@ actually they all challenges are really fun and you are going to learn a lot whi
   <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/huddle-landing-page-with-single-introductory-section/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
  </span>
  </div>
+
+ ### 15. Article preview component
+<img src="https://img.shields.io/badge/Date-15/07/2023-red?style=for-the-badge&logo=&logoColor=white" alt="Date">
+
+This Solution submitted nearly a month later and It was just a wonder and one of the best challenge by `Frontend Mentor`
+
+* Created `Popups` for the first time
+* Learned and tried `object-position`
+* Time Element in HTML [`view docs`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)
+
+#### Approach
+
+* Solution build on `Mobile first workflow approach`
+* Solution is fully `responsive` for all devices
+* Added animation using `gsap`
+
+<div align="left">
+<span>
+ <a href="https://github.com/MrSandipSharma/Frontend-Mentor-Solutions/tree/main/Newbie/Article-preview-component"><img src="https://img.shields.io/badge/Source Code-blue?style=for-the-badge&logo=&logoColor=white" alt="Source Code"></a>
+ </span>
+ <span>
+  <a href="https://frontend-mentor-solutions-by-ss.netlify.app/newbie/article-preview-component/"><img src="https://img.shields.io/badge/Live Demo-red?style=for-the-badge&logo=&logoColor=white" alt="Live Demo"></a>
+ </span>
+ </div>
  
  
  ## Say `Hello 👏` to me
