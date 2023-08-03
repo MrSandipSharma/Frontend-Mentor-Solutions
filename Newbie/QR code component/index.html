@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <meta name="description" content="QR code component Solution" />
+    <meta name="keywords" content="Frontend Mentor, QR code component" />
+    <meta name="theme-color" content="#1b4af5" />
+
     <link
       rel="icon"
       type="image/png"
@@ -14,25 +18,39 @@
 
     <title>Frontend Mentor | QR code component</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS File -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main>
-      <img class="card_qr-code" src="/Newbie/QR code component/images/image-qr-code.png" alt="qr code" />
+    <main class="card">
+      <img
+        class="card__qr-code"
+        src="./images/image-qr-code.png"
+        alt="qr code image"
+      />
 
-      <h1 class="card_heading">
+      <h1 class="card__heading">
         Improve your front-end skills by building projects
       </h1>
-      <p class="card_description">
+      <p class="card__description">
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
       </p>
     </main>
 
-    <!-- JS File -->
-    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
-    <script src="script.js"></script>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sandip Sharma</a>.
+    </footer>
   </body>
 </html>
